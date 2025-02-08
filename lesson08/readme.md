@@ -1,35 +1,71 @@
-Document and website structure
+Here’s a structured README for **Document and Website Structure**:  
 
-Structure tags
+---
 
-The <header> tag 
-The <header> element is used as a container for page heading content. The tag typically contains heading tags (<h1> - <h6>), a logo image, or other content that introduces the content. It is possible to have more than one <header> tag per page; however, the <header> cannot be coded within a <footer> or another <header> tag.
+# **Document and Website Structure Guide**
 
-The <nav> tag 
- The <nav> tag is a block level element used to define major blocks of navigation links or navigation menus.
+## **Structure Tags and Their Descriptions**
 
-The <main> tag 
- The <main> tag is used to serve a container for major page content that is not repeated in other parts of the page. A web page can include only one <main> element. Additionally, it cannot be included as a child element within a <header>, <nav>, footer>, <article>, or <aside> tag.
+| **Tag**        | **Description**  |
+|---------------|----------------|
+| `<header>`    | Defines a container for page heading content, including headings (`<h1>-<h6>`), logos, or introductory text. Cannot be placed inside a `<footer>` or another `<header>`. |
+| `<nav>`       | Defines a block for major navigation links or menus. |
+| `<main>`      | Contains the primary content of the page that is unique and not repeated elsewhere. Each page should have only **one** `<main>`, and it **cannot** be inside `<header>`, `<nav>`, `<footer>`, `<article>`, or `<aside>`. |
+| `<section>`   | Defines thematic sections in a document, such as headers, footers, or grouped content. |
+| `<article>`   | Represents an independent and reusable piece of content, such as blog posts or news articles. |
+| `<aside>`     | Defines content that is **related** to the surrounding content but **not essential**, like sidebars or related links. |
+| `<footer>`    | Contains footer information like contact details, copyright notices, and additional links. A page can have multiple `<footer>` tags. |
+| `<figure>`    | Specifies **self-contained** content such as images, diagrams, or code snippets. |
+| `<figcaption>`| Provides a **caption** for a `<figure>` element and is typically placed as its first or last child element. |
 
-The <section> tag
-The <section> tag defines generic sections in a web page such as headers, footers, or any other sections of the document. In this context, a section is a thematic grouping of content.
+---
 
-The <article> tag
-The <article> element represents a complete, or self-contained, composition in a document, page, application, or site that is, in principle, independently distributable or reusable.
+## **Example: Basic Web Page Structure**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Structure Example</title>
+</head>
+<body>
 
-The <aside> tag 
-The <aside> tag is a block level element that defines content aside from the content it is placed in. The aside content should be related to the surrounding content.
+    <header>
+        <h1>Website Title</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-The <footer> tag 
-The <footer> tag is a block level element that defines footer information for an entire web page or section of the document. The content of the <footer> typically consists of contact information, copyright, links, or logos. In some cases, a web page may contain multiple <footer> tags.
+    <main>
+        <section>
+            <h2>Main Section</h2>
+            <p>This is a section of the main content.</p>
+        </section>
+        <article>
+            <h2>Article Title</h2>
+            <p>This is an article with self-contained content.</p>
+        </article>
+        <aside>
+            <h3>Related Links</h3>
+            <ul>
+                <li><a href="#">Related Article 1</a></li>
+                <li><a href="#">Related Article 2</a></li>
+            </ul>
+        </aside>
+    </main>
 
-The <figure> tag 
-The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, or code sections. By default, this is a block level element with 40px right and left margin settings.
+    <footer>
+        <p>&copy; 2025 Your Website. All rights reserved.</p>
+    </footer>
 
-The <figcaption> tag
-The <figcaption> is a block level tag that defines a caption for a <figure> element discussed in the previous section. The <figcaption> tag is normally coded as the first or last child element of the <figure> tag.
+</body>
+</html>
+```
 
-
-
-
-
+This guide provides a **clear structure** for organizing content on a webpage efficiently. 🚀
