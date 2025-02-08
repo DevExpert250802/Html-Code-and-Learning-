@@ -1,32 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form > 
- <fieldset>
-    <legend>HTML DUMMY CODE</legend>
-    <label for="datepicker">Choose date :</label>
-    <input type="date" id="datepicker">
-    <br>
-     <br>
-     <label for="selector"> Choose your dishes</label>
-<select name="dishes" id="selector">
-<option value="maggi">Maggi</option>
-<option value="biscuit">Biscuit</option>
-<option value="kurkure">kurkure</option>
-</select>
-<br>
-<br>
-<button type="button">mai hu button </button>
-<br>
-<br>
-<textarea name="textarea" id="textarea" cols="15" rows="2" placeholder="enter text here...."></textarea>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application</title>
+  </head>
+  <body>
 
- </fieldset>
+    <h2>Job Application</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name">
+      <br>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email">
+      <br>
+      <br>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone">
+      <br>
+      <br>
+      <label for="resume">Resume:</label>
+      <input type="file" id="resume" accept=".pdf,.docx">
+      <br>
+      <br>
+      <label for="experience">Experience(in years)</label>
+      <input type="number" id="experience" name="quantity" min="1" max="50">
+      <br>
+      <br>
+      <fieldset>
+        <legend>Skills</legend>
+        <input type="checkbox" id="checkbox1">
+        <label for="checkbox1">Html</label>
+        <br>
+        <input type="checkbox" id="checkbox2">
+        <label for="checkbox2">CSS</label>
+        <br>
+        <input type="checkbox" id="checkbox3">
+        <label for="checkbox3">JavaScript</label>
+        <br>
+        <br>
+      </fieldset>
+      <br>
+      <label for="education">Higest Education:</label>
+      <select id="education" name="education">
+        <option value="high school">High School</option>
+        <option value="phd">Phd</option>
+        <option value="b.Tech">B.tech</option>
+      </select>
+       <br>
+      <br>
+      <fieldset>
+      <legend >Availablity</legend>
+      <label for="radio1">full time</label>
+      <input type="radio" name="radio" id="radio1">
+      <br>
+      <br>
+      <label for="radio2">part time</label>
+      <input type="radio" name="radio" id="radio2">
+    </fieldset>
+      <label for="text">Additional Comments:</label>
+      <br>
+      <textarea name="text" id="text" rows="5" cols="45"></textarea>
+      <br>
+      <br>
+      <input type="button" value="Submit Application">
     </form>
-</body>
+  </body>
 </html>
