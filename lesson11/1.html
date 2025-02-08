@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form >
-        <label for="email"> Enter Email ID:</label>
-        <input type="text" id="email" placeholder="Enter Your Email ID">
-        
-        
-        <br>
-        <br>
-        <label for="password"> Enter Pssword</label>
-        <input type="text" id="password" placeholder="Enter Your Pssword">
-        <br>
-        <br>
-        <input type="submit" value="Click here">
-        
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Third Document</title>
+  </head>
+  <body>
 
-        
-
+    <h2>Event Registration</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name">
+      <br>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email">
+      <br>
+      <br>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone">
+      <br>
+      <br>
+      <label for="occupation">Occupation:</label>
+      <select id="occupation" name="occupation">
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="engineer">Engineer</option>
+        <option value="other">Other</option>
+      </select>
+      <br>
+      <br>
+      <fieldset>
+        <legend>Topic of Intrest</legend>
+        <input type="checkbox" id="checkbox1">
+        <label for="checkbox1">Html</label>
+        <br>
+        <input type="checkbox" id="checkbox2">
+        <label for="checkbox2">CSS</label>
+        <br>
+        <input type="checkbox" id="checkbox3">
+        <label for="checkbox3">JavaScript</label>
+        <br>
+        <br>
+      </fieldset>
+      <br>
+      <br>
+      <label for="text">Comments:</label>
+      <br>
+      <textarea name="text" id="text" rows="5" cols="45"></textarea>
+      <br>
+      <br>
+      <input type="button" value="Register">
     </form>
-</body>
+  </body>
 </html>
